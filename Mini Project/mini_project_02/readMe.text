@@ -1,1 +1,20 @@
+Sistem mengukur suhu ruangan 
 
+Alat yang dibutuhkan
+1.	3 buah LED dengan warna berbeda yang mengindikasikan warna merah, kuning, hijau
+2.	1 buah button
+3.	1 buah sensor suhu DHT 11
+4.	NodeMCU
+5.	Resistor (jika diperlukan)
+
+
+Penjelasan singkat tentang Project ini : 
+Sebuah sistem pendingin ruangan membutuhkan LED untuk menentukan Level Suhu pada ruangan tersebut.
+Kita akan membagi 3 Level Suhu untuk masing-masing LED.
+Level 1 : Aman , jika suhu di bawah 35 derajat C. Satu buah LED menyala
+Level 2 : Siaga, jika suhu antara 35 sampai 50 derajat C. Dua buah LED menyala 
+Level 3 : Darurat, jika suhu di atas 50 derajat C. Tiga buah LED menyala
+Satu buah button digunakan untuk mengaktifkan indicator system. Jika button belum ditekan, perubahan berapa pun perubahan suhu tidak akan menyalakan LED. Setelah button ditekan, maka indicator system akan menyala sesuai dengan level suhu yang telah ditetapkan. 
+
+
+Schematic nya (Coming Soon) ... 
