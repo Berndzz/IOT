@@ -1,0 +1,13 @@
+Traffic Light / APILL perempatan jalan
+
+Alat yang dibutuhkan 
+3 buah LED (Warna bisa bebas)
+NodeMCU
+Resistor (jika diperlukan)
+
+Penjelasan Singkat Project 
+Kontrol LED yang dilakukan akan menerapkan implementasi seperti pada Lampu Merah / APILL pada perempatan jalan. 
+Tentukan interval dalam menyalakan lampu led seperti pada
+implementasi APILL. Tunda dalam menyalakan antar lampu tidak menggunakan fungsi delay().
+
+Rangkaian Schematic (Comming soon)..
