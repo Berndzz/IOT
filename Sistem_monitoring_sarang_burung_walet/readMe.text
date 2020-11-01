@@ -26,6 +26,9 @@ RUMUS menghitung LUX (pencahayaan)
 Y = 0,009768 * X + 10
 Y = tingakat pencahayaan (LUX)
 X = nilai ADC
+misalnya x = 4096  
+nnti hasilnya itu yang jadi nilai max nya terus untuk nyari threshold hasilnya tinggal
+dikali 0.5 (biar dbagi dua), hasil dari perkalian 0.5 menghasilkan threshold dari 0-24 dan 25-50 
 
 Penjelasan singkat
 Sistem ini untuk memonitoring suhu dan pencahayaan di sarang burung walet (simulasi);
