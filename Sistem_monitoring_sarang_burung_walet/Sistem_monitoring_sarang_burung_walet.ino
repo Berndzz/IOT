@@ -3,7 +3,6 @@
 #define BLYNK_PRINT Serial
 #include <WiFi.h>
 #include <WiFiClient.h>
-#include <analogWrite.h>
 #include <BlynkSimpleEsp32.h>
 #include "DHT.h"
 
@@ -46,7 +45,7 @@ BLYNK_WRITE(V4){
      Blynk.setProperty(V6,"color","#43d381"); //hijau
   }
   else{
-    Blynk.setProperty(V6,"color","#d3435c");
+    Blynk.setProperty(V6,"color","#d3435c"); // merah
   }
 }
 
@@ -71,7 +70,7 @@ void Kirim_Sensor_Cahaya(){
   //dibawaah threshold 
   if(ldrValue < 25 ){
     digitalWrite(LED_PIN_ldr,HIGH);
-    Serial.print("Kecerahan: ");
+    Serial.print("Kecerahan: "); 
     Serial.print(ldrValue);
     ledVirt_ldr.on();
     Serial.println();
@@ -99,10 +98,10 @@ BLYNK_WRITE(V5){
   Serial.print(sliderSUHU_value);
   Serial.print(F(("°C \n")));
   if(sliderSUHU_value < 25){
-    Blynk.setProperty(V7,"color","#43d381");
+    Blynk.setProperty(V7,"color","#43d381"); // hijau
   }
   else{
-    Blynk.setProperty(V7,"color","#d3435c");
+    Blynk.setProperty(V7,"color","#d3435c"); //merah
   }
 }
 
@@ -179,3 +178,8 @@ void loop() {
   timer.run();
  }
 }
+
+
+/*
+credit by Hardus.
+*/
