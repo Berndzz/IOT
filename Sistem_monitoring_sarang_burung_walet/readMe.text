@@ -1,0 +1,34 @@
+Judul : Sistem Monitoring Sarang Burung Walet
+
+alat yang dibutuhkan
+
+1 buah LDR sebagai sensor cahaya
+1 buah DHT 11 sebagai sensor suhu
+1 buah LED fisik, sebagai indicator keamanan level pencahayaan
+1 buah LED fisik, sebagai indicator keamanan level suhu
+1 buah nodeMCU esp32
+jumper male to male secukupnya
+resistor 180ohm (untuk tempatku 180 ohm klo 100ohm juga bisa) seperlunya
+
+keterangan tambahan:
+
+VO = virtual pin super chart LUX
+V1 = virtual pin super chart SUHU
+V2 = virtual pin label Value LUX 
+V3 = virtual pin label Value SUHU
+V4 = virtual pin slider widget LUX
+V5 = virtual pin slider widget SUHU
+V6 = virtual pin widget LED LUX 
+V7 = virtual pin widget LED SUHU
+V8 = virtual pin widget button
+
+RUMUS menghitung LUX (pencahayaan)
+Y = 0,009768 * X + 10
+Y = tingakat pencahayaan (LUX)
+X = nilai ADC
+
+Penjelasan singkat
+Sistem ini untuk memonitoring suhu dan pencahayaan di sarang burung walet (simulasi);
+misalnya suhu nya diatas threshold led virtual akan berwarna merah  , dibawah threshold berwarna hijau. 
+sama halnya dengan lux. Sistem akan on jika kita menekan button jika tidak maka sistem tidak akan berjalan.
+
